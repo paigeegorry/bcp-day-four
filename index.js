@@ -1,24 +1,17 @@
 function handleSubmit(event) {
     var form = event.target;
     var elements = form.elements;
+    var toppings = elements.toppings;
 
-    var guess = elements.guess.value;
-    console.log('guess', guess)
+    var selectedToppings = '';
 
-    var result = document.getElementById('result');
-    
-    //result.textContent = 'You made a guess of ' + guess;
+    for (var i = 0; i < toppings.length; i++){
+        var topping = toppings[i];
+        if (topping.checked) {
+            selectedToppings += ' ' + topping.value;
+        }
 
-    var correct = 1;
-    if (guess == correct) {
-        result.textContent = 'You are correct!' 
-    } 
-    else if (guess > correct) {
-        result.textContent = 'Your guess is too high!'
-    } 
-    else {
-        result.textContent = 'Your guess is too low!'
+        console.log(selectedToppings);
     }
-   
-   
+
 }

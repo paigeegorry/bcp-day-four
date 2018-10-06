@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Apps FTW!</title>
+    <title>My Pizza Order</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Apps FTW!</h1>
+    <h1>Order a pizza!</h1>
 
     <form onsubmit="return handleSubmit(event), false;">
    
+        <h2>Veggies</h2>
         <p>
         <label>
             <input value = "olives" name="toppings" type="checkbox"> Olives 
         </label>
         <label>
-            <input value = "pepperoni" name="toppings" type="checkbox"> Pepperoni
+            <input value = "red-onion" name="toppings" type="checkbox"> Red Onion
         </label>
         <label>
-            <input value = "pineapple" name="toppings" type="checkbox"> Pineapple
+            <input value = "green-peppers" name="toppings" type="checkbox"> Green Peppers
+        </label>
+        <label>
+            <input value = "red-peppers" name="toppings" type="checkbox"> Red Peppers
+        </label>
+        <label>
+            <input value = "Mushrooms" name="toppings" type="checkbox"> Mushrooms
         </label>
          </p>
         
+         <h2>Crust</h2>
+         <p>
+         <label>
+             <input value = "gluten-free" name="toppings" type="checkbox"> Gluten-free 
+         </label>
+         <label>
+             <input value = "thin" name="toppings" type="checkbox"> Thin
+         </label>
+         <label>
+             <input value = "cheesy" name="toppings" type="checkbox"> Cheesy
+         </label>
+         <label>
+             <input value = "regular" name="toppings" type="checkbox"> Regular
+         </label>
+          </p>
+
         <button>Order</button>
 
     </form>

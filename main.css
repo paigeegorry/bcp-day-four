@@ -1,6 +1,13 @@
 h1 {
-    color: blueviolet;
-    font-family: sans-serif;
+    color: #ec5109;
+    font-size: 2.5em;
 }
 
+h2 {
+    font-size: 1.5em;
+    color: #340202; 
+}
 
+* {
+    font-family: sans-serif;
+}
